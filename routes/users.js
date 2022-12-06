@@ -17,7 +17,7 @@ router.post("/" , (req, res) => {
 
    users.push({... user, id: uuidv4()});
 
-    res.send(`user with name ${user.firstName} has been added`);
+    res.send(`user with the name ${user.firstName} has been added`);
 });
 
 router.get("/:id" , (req, res) => {
@@ -50,7 +50,7 @@ if (age)user.age = age;
 
 res.send(`The user with this id ${id} has been updated`);
 
-
+ 
 });
 
 export default router;
